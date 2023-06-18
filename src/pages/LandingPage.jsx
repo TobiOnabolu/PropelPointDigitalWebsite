@@ -1,5 +1,6 @@
 import HeaderSection from '../sections/HeaderSection'
 import HeroSection from '../sections/HeroSection';
+import ServicesSection from '../sections/ServicesSection';
 
 export default function LandingPage(props) {
   const { mobileMenuOpen, setMobileMenuOpen } = props;
@@ -8,6 +9,7 @@ export default function LandingPage(props) {
     <BackDrop>
       <HeaderSection mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
       <HeroSection />
+      <ServicesSection/>
     </BackDrop>
   )
 }

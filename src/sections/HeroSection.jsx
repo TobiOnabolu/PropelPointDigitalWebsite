@@ -9,10 +9,9 @@ export default function HeroSection() {
     <div className="relative isolate px-6 pt-14 lg:px-8">
       <BackgroundBlur sign='-' topOffset='40' mobileTopOffset='80' leftOffset='[calc(50%-11rem)]' rotateDegrees='30' mobileLeftOffset='[calc(50%-30rem)]'  />
       <MainContentContainer>
-        <BlogButton />
         <TextContainer alignment="center">
-          <Title />
-          <Text />
+          <Title>Unleash your business potential</Title>
+          <Text>Leverage our expertise to drive real results and amplify your online presence</Text>
           <FlexContainer marginTop="10" horizontalAlignment="center" verticalAlignment="center" horizontalItemSpacing="6">
             <SolidButton />
             <TransparentButton />

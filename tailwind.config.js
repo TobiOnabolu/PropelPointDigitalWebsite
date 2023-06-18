@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#00C853',
+        secondary: '#6FBF4D',
+      },
       
     },
   },

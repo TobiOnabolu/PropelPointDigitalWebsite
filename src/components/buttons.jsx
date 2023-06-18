@@ -4,7 +4,7 @@ export function SolidButton() {
   return (
     <a
       href="#"
-      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+      className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
     >
       Get started
     </a>
@@ -33,11 +33,11 @@ export function BlogButton() {
   )
 }
 
-export function LoginButton() {
+export function LoginButton(props) {
   return (
     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
       <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-        Log in <span aria-hidden="true">&rarr;</span>
+        {props.children} <span aria-hidden="true">&rarr;</span>
       </a>
     </div>
   )
@@ -47,7 +47,7 @@ export function DropDownButton(props) {
   const { setMobileMenuOpen } = props
 
   return (
-    <div className="flex lg:hidden">
+    <div className="flex ml-auto lg:hidden">
       <button
         type="button"
         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"

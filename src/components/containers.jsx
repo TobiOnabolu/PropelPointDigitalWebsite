@@ -19,7 +19,7 @@ export function FlexContainer(props) {
   } = props
 
   return (
-    <div className={`mt-${marginTop} flex items-${horizontalAlignment} justify-${verticalAlignment} gap-x-${horizontalItemSpacing}`}>
+    <div className={`mt-${marginTop} flex items-${verticalAlignment} justify-${horizontalAlignment} gap-x-${horizontalItemSpacing}`}>
       {props.children}
     </div>
   )
